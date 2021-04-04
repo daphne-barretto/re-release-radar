@@ -39,14 +39,16 @@
         </div>
         <div class="media-body">
           <dl class="dl-horizontal">
-            <dt>TEST</dt><dd>{{href}}</dd>
-            <dt>TEST</dt><dd>{{items}}</dd>
-            <dt>TEST</dt><dd>{{items.0.external_urls.spotify}}</dd>
+            <dt>HREF</dt><dd><a href="{{href}}">{{href}}</a></dd>
+            <dt>Playlist Name</dt><dd>{{items.0.name}}</dd>
+            <dt>Playlist Link</dt><dd><a href="{{items.0.external_urls.spotify}}">{{items.0.external_urls.spotify}}</a></dd>
+<!--
             <dt>TEST</dt><dd>{{items.1.href}}</dd>
             <dt>TEST</dt><dd>{{items.2.name}}</dd>
             <dt>TEST</dt><dd>{{items.3.name}}</dd>
             <dt>TEST</dt><dd>{{items.4.name}}</dd>
             <dt>TEST</dt><dd>{{items.5.name}}</dd>
+-->
 <!--
             <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
             <dt>Id</dt><dd>{{id}}</dd>
